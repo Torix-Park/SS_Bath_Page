@@ -1,13 +1,17 @@
 import { Suspense } from 'react';
+
 import './App.css';
 import Spinner from '@components/Spinner/Spinner';
+import MainNavigation from '@routes/MainNavigation';
+import Footer from '@components/Footer/Footer';
 
-function App() {
+const App = () => {
   return (
     <Suspense fallback={<Spinner />}>
-      <div></div>
+      <MainNavigation />
+      <Footer />
     </Suspense>
   );
-}
+};
 
 export default App;
