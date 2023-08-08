@@ -1,3 +1,7 @@
+* {
+  font-family: 'Roboto';
+}
+
 h1,
 h2,
 h3,
@@ -71,4 +75,8 @@ article {
 section {
   margin: 0;
   padding: 0;
+}
+
+.point {
+  color: #80cbc4;
 }
