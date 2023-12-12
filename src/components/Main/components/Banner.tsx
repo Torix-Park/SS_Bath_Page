@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import styled from 'styled-components';
+import '../styles/Banner.scss';
 
 const Banner = () => {
   const [images] = useState<string[]>(['banner1.jpg', 'banner2.jpg']);
@@ -34,7 +35,7 @@ const Banner = () => {
             <button
               key={i}
               onClick={() => handelButtonClick(i)}
-              style={{ backgroundColor: `${index === i ? '#2c3e50' : ''}` }}
+              style={{ backgroundColor: `${index === i ? '#80cbc4' : ''}` }}
             />
           ))}
         </div>
@@ -49,55 +50,4 @@ const Container = styled.div`
   width: 100vw;
   height: 55vh;
   overflow: hidden;
-
-  .banner-container {
-    display: flex;
-    transition: left 1s ease-in-out;
-    position: relative;
-    width: 200%;
-    height: 100%;
-
-    .banner-img {
-      overflow: hidden;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 0.75s ease-in-out;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-    .banner-img.active {
-      opacity: 1;
-    }
-  }
-
-  .button-container {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-
-    button {
-      user-select: none;
-      padding: 8px;
-      margin: 5px;
-      border-radius: 25px;
-      cursor: pointer;
-      background-color: #63b6ee;
-      color: #fff;
-      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-
-      &:hover {
-        background-color: #364757;
-      }
-    }
-  }
 `;
