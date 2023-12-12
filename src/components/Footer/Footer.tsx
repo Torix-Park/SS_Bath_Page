@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <div className='footer-content'>
-        <p className='company-name'>신성배관</p>
+        <p className='company-name'>신성바쓰</p>
         <section>
           <div className='flex'>
             <p className='title'>주소</p>

@@ -1,9 +1,8 @@
-import ItemBox from '@components/ItemBox/ItemBox';
-import './styles/Main.scss';
 import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Banner from './components/Banner';
+import Showcase from './components/ShowCase';
 
 const Main = () => {
   const location = useLocation();
@@ -23,12 +22,7 @@ const Main = () => {
     <div>
       <Banner />
       <Container>
-        <ItemBox />
-        <ItemBox />
-        <ItemBox />
-        <ItemBox />
-        <ItemBox />
-        <ItemBox />
+        <Showcase />
       </Container>
     </div>
   );

@@ -1,5 +1,7 @@
 * {
   font-family: 'Roboto';
+  max-width: 1920px;
+  overflow-x: hidden;
 }
 
 h1,
@@ -79,4 +81,20 @@ section {
 
 .point {
   color: #80cbc4;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

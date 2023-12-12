@@ -1,30 +1,50 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link, useLocation } from 'react-router-dom';
 import './styles/Navigation.scss';
-import { faUser } from '@fortawesome/free-regular-svg-icons';
-import { Link } from 'react-router-dom';
-import Search from './components/Search';
-import Bar from './components/Bar';
+import styled from 'styled-components';
+
+interface MenuProps {
+  route: string;
+  nav: string;
+}
+
+const Menu = ({ route, nav }: MenuProps) => {
+  const location = useLocation();
+
+  return (
+    <p className={location.pathname.includes(route) ? 'point' : ''}>
+      <Link to={`/${route}`}>{nav}</Link>
+    </p>
+  );
+};
 
 const Navigation = () => {
   return (
-    <nav>
-      <div className='flex'>
-        <div className='logo'>
-          {/* <div className='logo-img'>신성&바쓰</div> */}
-          <img className='logo-img' src={`${import.meta.env.BASE_URL}assets/SS_logo2.png`} />
-        </div>
-        <Search />
-        <div className='menus'>
-          <div className='icons'>
-            <Link to='/login'>
-              <FontAwesomeIcon icon={faUser} />
-            </Link>
+    <Container>
+      <nav>
+        <div className='flex'>
+          <Link to='/'>
+            <div className='logo'>
+              <img
+                className='logo-img'
+                src={`${import.meta.env.BASE_URL}assets/SS_logo2_white.png`}
+              />
+            </div>
+          </Link>
+          <div className='menus'>
+            <Menu route='company' nav='회사소개' />
+            <Menu route='products' nav='상품소개' />
+            <Menu route='map' nav='오시는길' />
+            <Menu route='boards' nav='게시판' />
           </div>
         </div>
-      </div>
-      <Bar />
-    </nav>
+      </nav>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  background-color: #80cbc4;
+  color: #fff;
+`;
 
 export default Navigation;
