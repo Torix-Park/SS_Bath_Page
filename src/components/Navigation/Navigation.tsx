@@ -45,6 +45,12 @@ const Navigation = () => {
 const Container = styled.div`
   background-color: #80cbc4;
   color: #fff;
+  /* 화면 상단 고정 */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; */
 `;
 
 export default Navigation;

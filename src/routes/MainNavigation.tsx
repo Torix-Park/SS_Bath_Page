@@ -14,14 +14,16 @@ const MainNavigation = () => {
     <Router>
       <Container>
         <Navigation />
-        <Routes>
-          <Route path='/' element={<Main />} />
-          <Route path='/company' element={<Company />} />
-          <Route path='/products' element={<Products />} />
-          <Route path='/waytocome' element={<Waytocome />} />
-          <Route path='/boards' element={<Boards />} />
-          <Route path='/boards/post-detail' element={<PostDetail />} />
-        </Routes>
+        <div className='route'>
+          <Routes>
+            <Route path='/' element={<Main />} />
+            <Route path='/company' element={<Company />} />
+            <Route path='/products' element={<Products />} />
+            <Route path='/waytocome' element={<Waytocome />} />
+            <Route path='/boards' element={<Boards />} />
+            <Route path='/boards/post-detail' element={<PostDetail />} />
+          </Routes>
+        </div>
       </Container>
     </Router>
   );
@@ -30,7 +32,13 @@ const MainNavigation = () => {
 export default MainNavigation;
 
 const Container = styled.div`
+  position: relative;
   width: 100vw;
   margin: 0 auto;
   flex: 1;
+
+  .route {
+    /* navigation height */
+    /* margin-top: 135px; */
+  }
 `;
