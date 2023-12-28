@@ -53,6 +53,9 @@ const Showcase = () => {
       <div className='customer'>
         <div className='title'>
           <p>고객문의</p>
+          <Link to={'/boards'} className='right-arrow'>
+            <img src={`${import.meta.env.BASE_URL}assets/right_arrow.png`} />
+          </Link>
         </div>
         <div className='description'>
           <p>

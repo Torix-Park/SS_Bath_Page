@@ -33,7 +33,7 @@ const Navigation = () => {
           <div className='menus'>
             <Menu route='company' nav='회사소개' />
             <Menu route='products' nav='상품소개' />
-            <Menu route='map' nav='오시는길' />
+            <Menu route='waytocome' nav='오시는길' />
             <Menu route='boards' nav='게시판' />
           </div>
         </div>

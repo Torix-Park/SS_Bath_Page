@@ -1,0 +1,22 @@
+.header {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+
+  .header-title,
+  .header-paging {
+    display: flex;
+    align-items: end;
+  }
+
+  .header-title {
+    font-size: 30px;
+    color: #80cbc4;
+  }
+
+  .header-paging {
+    margin-left: auto;
+    font-size: 20px;
+  }
+}
