@@ -67,20 +67,19 @@ const Container = styled.div`
     margin: 0 5px;
     padding: 8px 12px;
     font-size: 14px;
-    cursor: pointer;
     border: 1px solid #ddd;
     border-radius: 25px;
     background-color: #fff;
     transition: 0.15s ease;
     font-weight: 600;
     font-family: 'Lato';
+    cursor: pointer;
 
     &:hover {
       background-color: #f2f2f2;
     }
 
     &:disabled {
-      cursor: auto;
       opacity: 0.5;
     }
   }

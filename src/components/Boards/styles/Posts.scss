@@ -1,0 +1,37 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    color: #444;
+    font-weight: 600;
+    padding: 0 10px;
+    padding-bottom: 8px;
+  }
+
+  tbody {
+    border-top: 2px solid #000;
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    td {
+      text-align: center;
+      padding: 10px;
+
+      &:nth-child(1) {
+        color: #b1b1b1;
+      }
+
+      &:nth-child(2) {
+        text-align: left;
+        font-weight: bold;
+      }
+
+      &:nth-child(3) {
+        color: #b1b1b1;
+      }
+    }
+  }
+}

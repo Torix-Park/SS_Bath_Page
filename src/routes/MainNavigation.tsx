@@ -38,7 +38,8 @@ const Container = styled.div`
   flex: 1;
 
   .route {
-    /* navigation height */
-    /* margin-top: 135px; */
+    /* 화면 상단 고정 */
+    /* navigation: height;
+    margin-top: 135px; */
   }
 `;

@@ -54,8 +54,12 @@ const Boards = () => {
       <div className='header'>
         <p className='header-title'>게시판</p>
         <p className='header-paging'>
-          {currentPage}/{totalPages}
+          <p className='point'>{currentPage}</p>/{totalPages}
         </p>
+      </div>
+      <div className='search'>
+        <input type='text' placeholder='검색어를 입력하세요' />
+        <button>검색</button>
       </div>
       <Posts displayedPosts={displayedPosts} />
       <Pagination
