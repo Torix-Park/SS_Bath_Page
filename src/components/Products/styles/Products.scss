@@ -1,0 +1,64 @@
+.category-select {
+  flex: 1;
+  margin-right: 16px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .selected-option {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .options {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    .option {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-bottom: 1px solid #ddd;
+      color: #333;
+      padding: 8px;
+    }
+
+    .selected {
+      color: #fff;
+      background-color: #80cbc4;
+    }
+  }
+}
+
+.sub-category-select {
+  display: flex;
+  flex: 5;
+
+  .sub-options {
+    flex: 1;
+
+    p {
+      color: #333;
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 8px;
+      cursor: pointer;
+      border-bottom: 1px solid #ccc;
+
+      &:hover {
+        color: #fff;
+        background-color: #80cbc4;
+      }
+    }
+  }
+}

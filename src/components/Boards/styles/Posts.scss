@@ -27,6 +27,10 @@ table {
       &:nth-child(2) {
         text-align: left;
         font-weight: bold;
+
+        a:hover {
+          text-decoration: underline;
+        }
       }
 
       &:nth-child(3) {

@@ -12,7 +12,7 @@ export interface Post {
   createdAt: string;
 }
 
-const itemsPerPage: number = 20;
+const itemsPerPage: number = 10;
 const buttonsPerPage: number = 5;
 
 const posts: Post[] = FakeData;

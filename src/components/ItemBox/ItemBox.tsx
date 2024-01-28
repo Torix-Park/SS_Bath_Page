@@ -2,15 +2,6 @@ import { Link } from 'react-router-dom';
 import './styles/ItemBox.scss';
 import { useEffect, useState } from 'react';
 
-// type Props = {
-//   brand: string;
-//   img: string;
-//   name: string;
-//   newItem?: boolean;
-//   type: string;
-//   id : string;
-// };
-
 const ItemBox = () => {
   const [img, setImg] = useState<string>('');
 

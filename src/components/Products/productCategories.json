@@ -1,0 +1,358 @@
+[
+  {
+    "id": "waterfaucet",
+    "name": "수전",
+    "categories": [
+      {
+        "id": "washup",
+        "name": "세면용",
+        "sub": [
+          {
+            "id": "general",
+            "name": "일반형"
+          },
+          {
+            "id": "reclamation",
+            "name": "매립형"
+          },
+          {
+            "id": "automaticwatersupply",
+            "name": "자동수전"
+          }
+        ]
+      },
+      {
+        "id": "washupshower",
+        "name": "세면샤워겸용"
+      },
+      {
+        "id": "shower",
+        "name": "샤워용",
+        "sub": [
+          {
+            "id": "showerhead+",
+            "name": "샤워헤드+"
+          },
+          {
+            "id": "showeronly",
+            "name": "샤워전용"
+          },
+          {
+            "id": "bathtubonly",
+            "name": "욕조전용"
+          },
+          {
+            "id": "shower/bathtub",
+            "name": "샤워/욕조"
+          },
+          {
+            "id": "rainshower",
+            "name": "레인샤워"
+          },
+          {
+            "id": "shelfshower",
+            "name": "선반샤워"
+          },
+          {
+            "id": "automatictemperaturecontrol",
+            "name": "자동온도조절"
+          },
+          {
+            "id": "wallreclamationtype",
+            "name": "벽매립형"
+          },
+          {
+            "id": "showerbar",
+            "name": "샤워바"
+          }
+        ]
+      },
+      {
+        "id": "kitchen",
+        "name": "주방용",
+        "sub": [
+          {
+            "id": "stickmounted",
+            "name": "대붙이"
+          },
+          {
+            "id": "wallmounted",
+            "name": "벽붙이"
+          }
+        ]
+      },
+      {
+        "id": "versatile",
+        "name": "다용도",
+        "sub": [
+          {
+            "id": "singlewaterfaucet",
+            "name": "단수전"
+          },
+          {
+            "id": "balconywaterfaucet",
+            "name": "발코니수전"
+          },
+          {
+            "id": "spraygun",
+            "name": "스프레이건"
+          }
+        ]
+      },
+      {
+        "id": "series",
+        "name": "시리즈",
+        "sub": [
+          {
+            "id": "vini",
+            "name": "VINI"
+          },
+          {
+            "id": "Aseries",
+            "name": "A시리즈"
+          },
+          {
+            "id": "Cseries",
+            "name": "C시리즈"
+          },
+          {
+            "id": "Dseries",
+            "name": "D시리즈"
+          },
+          {
+            "id": "D-vseries",
+            "name": "D-v시리즈"
+          },
+          {
+            "id": "Eseries",
+            "name": "E시리즈"
+          },
+          {
+            "id": "Gseries",
+            "name": "G시리즈"
+          },
+          {
+            "id": "Iseries",
+            "name": "I시리즈"
+          },
+          {
+            "id": "Jseries",
+            "name": "J시리즈"
+          },
+          {
+            "id": "Lseries",
+            "name": "L시리즈"
+          },
+          {
+            "id": "Qseries",
+            "name": "Q시리즈"
+          },
+          {
+            "id": "NEW-S",
+            "name": "NEW-S"
+          },
+          {
+            "id": "Tseries",
+            "name": "T시리즈"
+          },
+          {
+            "id": "Useries",
+            "name": "U시리즈"
+          },
+          {
+            "id": "javara",
+            "name": "자바라"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sanitarypottery",
+    "name": "위생도기",
+    "categories": [
+      {
+        "id": "toilet",
+        "name": "양변기",
+        "sub": [
+          {
+            "id": "onepiece+",
+            "name": "원피스+"
+          },
+          {
+            "id": "twopiece+",
+            "name": "투피스+"
+          },
+          {
+            "id": "potteryallinone",
+            "name": "도기일체형"
+          },
+          {
+            "id": "direct",
+            "name": "직수형"
+          },
+          {
+            "id": "toiletseat",
+            "name": "양변기시트"
+          },
+          {
+            "id": "part",
+            "name": "부품"
+          }
+        ]
+      },
+      {
+        "id": "washbasin",
+        "name": "세면기",
+        "sub": [
+          {
+            "id": "allinone",
+            "name": "일체형"
+          },
+          {
+            "id": "halflegged",
+            "name": "반다리형(평면붙임)"
+          },
+          {
+            "id": "longlegged",
+            "name": "긴다리형(평면붙임)"
+          },
+          {
+            "id": "counter",
+            "name": "카운터형+"
+          },
+          {
+            "id": "dressingtable",
+            "name": "화장대용"
+          },
+          {
+            "id": "trapexposure",
+            "name": "트랩노출형"
+          },
+          {
+            "id": "part",
+            "name": "부품"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bidet",
+    "name": "비데",
+    "categories": [
+      {
+        "id": "bidet",
+        "name": "비데"
+      },
+      {
+        "id": "allinonebidet",
+        "name": "일체형비데"
+      }
+    ]
+  },
+  {
+    "id": "public",
+    "name": "공중용",
+    "categories": [
+      {
+        "id": "automatictemperaturecontrolshower",
+        "name": "자동온도조절 샤워"
+      },
+      {
+        "id": "automaticwatersupply",
+        "name": "자동수전",
+        "sub": [
+          {
+            "id": "electricity",
+            "name": "전기식"
+          },
+          {
+            "id": "battery",
+            "name": "건전지식"
+          },
+          {
+            "id": "selfpowergeneration",
+            "name": "자가발전"
+          }
+        ]
+      },
+      {
+        "id": "toilet",
+        "name": "대변기"
+      },
+      {
+        "id": "urinal",
+        "name": "소변기",
+        "sub": [
+          {
+            "id": "sensorbuilt-in+",
+            "name": "감지기내장형+"
+          },
+          {
+            "id": "regular+",
+            "name": "일반+"
+          },
+          {
+            "id": "baby+",
+            "name": "유아용+"
+          }
+        ]
+      },
+      {
+        "id": "sensor",
+        "name": "감지기"
+      },
+      {
+        "id": "freshvalve",
+        "name": "후레쉬벨브"
+      },
+      {
+        "id": "waterfall",
+        "name": "수채"
+      },
+      {
+        "id": "airtowel",
+        "name": "에어타올"
+      },
+      {
+        "id": "etiquettebell",
+        "name": "에티켓벨"
+      },
+      {
+        "id": "safetyhandle",
+        "name": "안전 손잡이"
+      },
+      {
+        "id": "diaperchangingtable",
+        "name": "기저귀교환대"
+      },
+      {
+        "id": "baby",
+        "name": "유아용"
+      }
+    ]
+  },
+  {
+    "id": "tile",
+    "name": "타일",
+    "categories": [
+      {
+        "id": "wallTile",
+        "name": "벽타일"
+      },
+      {
+        "id": "floorTile",
+        "name": "바닥타일"
+      },
+      {
+        "id": "other",
+        "name": "기타"
+      }
+    ]
+  },
+  {
+    "id": "accessories",
+    "name": "액세서리"
+  }
+]
