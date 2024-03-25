@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import './styles/Products.scss';
 import { useEffect, useState } from 'react';
 import Categories from './components/Categories';
+import Test from './components/Test';
 
 export interface Product {
   id: string;
@@ -23,6 +24,8 @@ const Products = () => {
       <Categories />
       {/* <div>products</div>
       <div>paginations</div> */}
+
+      <Test />
     </Container>
   );
 };
@@ -35,6 +38,6 @@ const Container = styled.div`
   position: relative;
   width: 1280px;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 16px;
   height: auto;
 `;

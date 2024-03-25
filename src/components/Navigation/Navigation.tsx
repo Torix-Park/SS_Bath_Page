@@ -1,40 +1,42 @@
 import { Link, useLocation } from 'react-router-dom';
 import './styles/Navigation.scss';
 import styled from 'styled-components';
+import { useEffect } from 'react';
 
 interface MenuProps {
   route: string;
   nav: string;
+  location: string;
 }
 
-const Menu = ({ route, nav }: MenuProps) => {
-  const location = useLocation();
-
+const Menu = ({ route, nav, location }: MenuProps) => {
   return (
-    <p className={location.pathname.includes(route) ? 'point' : ''}>
+    <p className={location.includes(route) ? 'point' : ''}>
       <Link to={`/${route}`}>{nav}</Link>
     </p>
   );
 };
 
 const Navigation = () => {
+  const locationPathname = useLocation().pathname;
+
   return (
     <Container>
-      <nav>
+      <nav style={{ maxHeight: locationPathname.includes('products') ? '100px' : '150px' }}>
         <div className='flex'>
-          <Link to='/'>
-            <div className='logo'>
+          <div className='logo'>
+            <Link to='/'>
               <img
                 className='logo-img'
                 src={`${import.meta.env.BASE_URL}assets/SS_logo2_white.png`}
               />
-            </div>
-          </Link>
+            </Link>
+          </div>
           <div className='menus'>
-            <Menu route='company' nav='회사소개' />
-            <Menu route='products' nav='상품소개' />
-            <Menu route='waytocome' nav='오시는길' />
-            <Menu route='boards' nav='게시판' />
+            <Menu route='company' nav='회사소개' location={locationPathname} />
+            <Menu route='products' nav='상품소개' location={locationPathname} />
+            <Menu route='waytocome' nav='오시는길' location={locationPathname} />
+            <Menu route='boards' nav='게시판' location={locationPathname} />
           </div>
         </div>
       </nav>
